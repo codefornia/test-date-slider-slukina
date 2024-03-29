@@ -1,0 +1,54 @@
+$shadow-color: rgba(14, 88, 143, 0.2);
+$primary-text-color: #999999;
+$secondary-text-color: #333333;
+
+$button-active-color: #0167b3;
+$button-color: #75a8ce;
+
+.date-form {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 0 auto;
+  font-size: 12px;
+  color: $secondary-text-color;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.date-form_ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.date-form_li {
+  display: grid;
+  grid-template-columns: auto;
+
+  & label {
+    padding: 3px;
+  }
+
+  & input {
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px $shadow-color;
+  }
+}
+
+.date-form_button {
+  background-color: $button-color;
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 12px;
+
+  &:hover {
+    background-color: $button-active-color;
+  }
+}
